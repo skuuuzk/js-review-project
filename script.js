@@ -5,7 +5,7 @@ let todos = [];
 
 //DOM Elements
 const todoForm =document.getElementById('todo-form');
-const tdoInput = document.getElementById('todo-input');
+const todoInput = document.getElementById('todo-input');
 const todolist = document.getElementById('todo-list');
 // Function to render todos
 
@@ -17,7 +17,7 @@ function renderTodos() {
         li.innerHTML = `  
             <span>${todo}</span>
             <button onclick="editTodo(${index})">Edit</button>
-            <button onlick="deleteTodo(${index})">Delete</button>
+            <button onclick="deleteTodo(${index})">Delete</button>
         `;
         todolist.appendChild(li);
     });
@@ -37,7 +37,7 @@ function addTodo(event) {
 // Function to edit a todo 
 function editTodo(index) {
     const updateTodo = prompt('Edit your todo:', todos[index]);
-    if (updateTodo !==null) {
+    if (updateTodo !== null) {
         todos[index] = updateTodo.trim();
         renderTodos();
     }
