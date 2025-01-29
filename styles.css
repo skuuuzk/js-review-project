@@ -32,11 +32,11 @@ h1 {
     padding: 10px;
     border:1px solid #ccc;
     border-radius: 4px;
-    margin-right: 1px;
+    margin-right: 10px;
 }
 
-buttom{
-    padding: 1;
+button {
+    padding: 10px 15px;
     background-color: #28a745;
     color: #fff;
     border: none;
@@ -71,7 +71,7 @@ button:hover {
 } 
 
 .todo-item button {
-    background-color: 3dc3545;
+    background-color: #dc3545;
     border: none;
     color: #fff;
     padding: 5px 10px;

@@ -16,7 +16,7 @@ function renderTodos() {
         li.className = 'todo-item';
         li.innerHTML = `  
             <span>${todo}</span>
-            <button onclick="deleteTodo(${index})">Edit</button>
+            <button onclick="editTodo(${index})">Edit</button>
             <button onlick="deleteTodo(${index})">Delete</button>
         `;
         todolist.appendChild(li);
@@ -24,7 +24,7 @@ function renderTodos() {
 }
 
 // Function to add a new todo
-function addTodo(event){
+function addTodo(event) {
     event.preventDefault(); // Prevent form submission 
     const newTodo = todoInput.value.trim();
     if (newTodo) {
